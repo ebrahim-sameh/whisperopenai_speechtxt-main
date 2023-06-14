@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useWhisper } from '@chengsokdara/use-whisper';
 import AudioAnalyser from 'react-audio-analyser';
+require('dotenv').config();
 
 const App = () => {
   const {
@@ -11,7 +12,7 @@ const App = () => {
     startRecording,
     stopRecording,
   } = useWhisper({
-    apiKey: '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',
+    apiKey: process.env.REACT_APP_WHISPER_API_KEY, 
     removeSilence: true,
     streaming: true,
     timeSlice: 1_000,
