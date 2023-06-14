@@ -18,7 +18,7 @@ const App = () => {
     nonStop: true,
     stopTimeout: 5000,
     whisperConfig: {
-      language: 'en',
+      languageDetection: true, // Enable language detection
     },
   });
 
