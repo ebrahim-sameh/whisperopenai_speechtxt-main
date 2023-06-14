@@ -11,14 +11,14 @@ const App = () => {
     startRecording,
     stopRecording,
   } = useWhisper({
-    apiKey: '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',
+    apiKey: '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',
     removeSilence: true,
     streaming: true,
     timeSlice: 1_000,
     nonStop: true,
     stopTimeout: 5000,
     whisperConfig: {
-      language: 'en',
+      language: 'de',
     },
   });
 
